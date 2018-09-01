@@ -34,7 +34,7 @@ class CampaignShow extends Component {
         const items = [
             {
                 header: manager,
-                meta: 'Address of Manager',
+                meta: 'Address of Manager.',
                 description:
                     'The manager created this campaign and can create requests to withdraw money',
                 style: { overflowWrap: 'break-word' }
