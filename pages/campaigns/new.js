@@ -5,6 +5,7 @@ import factory from '../../ethereum/factory';
 import web3 from '../../ethereum/web3';
 import { Router } from '../../routes';
 
+
 class CampaignNew extends Component {
     state = {
         minimumContribution: '',
@@ -26,6 +27,7 @@ class CampaignNew extends Component {
                     from: accounts[0]
                 });
 
+
             Router.pushRoute('/');
         } catch (err) {
             this.setState({ errorMessage: err.message });
@@ -41,6 +43,7 @@ class CampaignNew extends Component {
 
                 <Form onSubmit={this.onSubmit} error={!!this.state.errorMessage}>
                     <Form.Field>
+
                         <label>Minimum Contribution</label>
                         <Input
                             label="wei"
@@ -49,6 +52,7 @@ class CampaignNew extends Component {
                             onChange={event =>
                                 this.setState({ minimumContribution: event.target.value })}
                         />
+
                     </Form.Field>
 
                     <Message error header="Oops!" content={this.state.errorMessage} />

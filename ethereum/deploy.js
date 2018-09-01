@@ -17,4 +17,3 @@ const deploy = async () => {
     console.log("deployed to address: " + result.options.address);
 };
 deploy();
-export default accounts;
